@@ -18,7 +18,7 @@ Go to the link below for installation if you don't have installed yet.
 
 1. Download the repository
 
-2. Unzip folder and open it with [VS Code](https://code.visualstudio.com/)
+2. Unzip
 
 - <h3> Frontend
 
