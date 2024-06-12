@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 
-mongoose.connect('mongodb+srv://jayrpatel1802:jay789@cluster0.oadudgd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect(url);
 
 // app.get("/",(req,res)=>{
 //     res.json("Hello");
