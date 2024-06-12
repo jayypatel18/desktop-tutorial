@@ -10,6 +10,11 @@ app.use(cors());
 
 mongoose.connect('mongodb+srv://jayrpatel1802:jay789@cluster0.oadudgd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
+
+
 app.post('/register', (req, res)=>{
     // To post / insert data into database
 
