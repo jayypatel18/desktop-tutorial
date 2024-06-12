@@ -8,9 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// require('dotenv').config();
-// const dbURI = process.env.mongodb_key;
-mongoose.connect('mongodb+srv://jayrpatel1802:jay789@cluster0.oadudgd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+
+mongoose.connect(process.env.mongodb_key);
 
 // app.get("/",(req,res)=>{
 //     res.json("Hello");
