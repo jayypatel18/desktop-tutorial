@@ -3,13 +3,16 @@ const express = require('express');
 const mongoose = require('mongoose');
 const FormDataModel = require ('./models/FormData');
 
+const dotenv = require('dotenv')
+dotenv.config();
+const url = process.env.mongodb_key;
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 
-mongoose.connect(process.env.mongodb_key);
+mongoose.connect(url);
 
 // app.get("/",(req,res)=>{
 //     res.json("Hello");
